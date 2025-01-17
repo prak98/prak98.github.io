@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<head>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="stylesheet.css">
+            <title>Shamsa Grill - Menu</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <style>
+                .bk{
+                    background-image: url(img.png)
+                }
+                .food_text{
+                    position: absolute;
+                    font-size: 15px;
+                    margin-top: -50px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                dialog{
+                    padding-left: 20px;
+                    padding-left: 20px;
+                    padding-top: 20px;
+                    padding-bottom: 80px;
+                    border-radius: 5px;
+                    border:none;
+                    box-shadow:2px 2px 15px rgb(0, 0, 0);
+                    cursor: pointer;
+                    border-radius:20px;
+                    flex-direction: column;
+                    align-items:center;
+                    text-align:center;
+                    height: 600px;
+                    width: 500px
+                }
+                .food_img{
+                    width: 500px;
+                    height: 500px;
+                }
+            </style>
+        </head>
+        <div class="bk">
+            <body class="menu-bkg-body" style="height:1000px;padding-top:60px;">
+                <div class="laptop">
+
+
+
+
+   
+               
+                        <div class="navbar">    
+                            <a href="menu.html">
+                                <button class="navbar-button">Menu</button>
+                            </a>
+                       
+                            <a href="home.html">
+                                <div class="veglogo">
+                                    <button type="veglogo" style="height:10px;">
+                                        <img class="main-logo" src="pictures/Shamsa_grill__1_-removebg-preview.png" style="height:90px; margin-top:19px">
+                                    </div>
+                                    </button>
+                            </a>
+                       
+                            <a href="orderpage.html">
+                                <button class="navbar-button">Order</button>
+                            </a>
+
+
+
+
+                        </div>
+                               
+
+
+
+
+                            <a href="home.html">
+                                <div class="veglogo">
+                                    <button type="veglogo" style="height:20px;">
+                                        <img src="pictures/Shamsa_grill__1_-removebg-preview" style="height:100px;">
+                                    </div>
+                                    </button>
+                            </a>
+                            <dialog id="hummus" class="hummus">
+                                <img class="food_img" src="pictures/hummuscel.png">
+                                <header class="food_text">Hummus is a beloved Mediterranean classic, made with a
+                                    smooth blend of chickpeas, creamy tahini, fresh lemon
+                                    juice, garlic, and olive oil.This flavorful dip offers
+                                    a perfect balance of savory, tangy, and earthy notes,
+                                    making it a versatile addition to any meal.Served with
+                                    fresh celery or warm pita bread, hummus is a healthy
+                                    and delicious appetizer that reflects the heart of
+                                    Mediterranean cuisine.</header>
+                            </dialog>
+                            <dialog id="baby_ganoush" class="baby_ganoush">
+                                <img class="food_img" src="pictures/baba_ganoush.png">
+                                <header class="food_text">Baba Ganoush is a smoky, velvety eggplant dip that is a
+                                    staple of Mediterranean cuisine. Made by roasting eggplants until tender and
+                                    slightly charred, then blending them with tahini, garlic, lemon juice, and olive
+                                    oil, this flavorful dish offers a perfect balance of creamy, savory, and tangy.
+                                    Often garnished with a drizzle of olive oil, fresh herbs, and a sprinkle
+                                    of paprika, Baba Ganoush is a delightful appetizer that pairs beautifully with
+                                    warm pita bread.</header>
+                            </dialog>
+                            <dialog id="falafal" class="falafal">
+                            </dialog>
+                            <dialog id="baklava" class="baklava">
+                            </dialog>
+                            <dialog id="maamoul" class="maamoul">
+                            </dialog>
+                            <dialog id="basbousa" class="basbousa">
+                            </dialog>
+
+
+                        </div>
+
+
+                        <h1 class="appet-title">Featured appetizers</h1>
+                        <div class="appetizer-grid">
+                            <button onclick=showDialog() class="menu-food-button">
+                                <img class="hummuspic" src="vhummuscel.png" alt="Hummus with Celery">
+                                Hummus with Celery
+                            </button>
+                            </button>
+                            <button onclick=ganoush_dialog() class="menu-food-button">
+                                <img class="baganpic" src="pictures/baba_ganoush.png" alt="Baba Ganoush">
+                                Baba Ganoush
+                            </button>
+                            <button onclick=showDialog() class="menu-food-button">
+                                <img class="baganpic" src="pictures/feta-salad.png" alt="Hummus with Celery">
+                                Feta Salad
+                            </button>
+                        </div>
+               
+                        <h1 class="entree-title">Entrees</h1>
+                        <div class="main-grid">
+                            <button onclick=showDialog() class="menu-food-button">
+                                <img class="falpic" src="pictures/falafel.png" alt="Falafel Wrap">
+                                Falafel Wrap
+                            </button>
+                            <button onclick=showDialog() class="menu-food-button">
+                                <img class="baganpic" src="pictures/baba_ganoush.png" alt="Baba Ganoush">
+                                Baba Ganoush
+                            </button>
+                            <button onclick=showDialog() class="menu-food-button">
+                                <img class="shwarma" src="pictures/shwarma.png" alt="Shawarma">
+                                Vegan Shawarma
+                            </button>
+                        </div>
+                        <h1 class="deserts-title">Deserts</h1>
+                        <div class="deserts-grid">
+                            <button onclick=showDialog() class="menu-food-button">
+                                <img class="baklpic" src="pictures/baklava.png" alt="Baklava">
+                                Baklava
+                            </button>
+                            <button onclick=showDialog() class="menu-food-button">
+                                <img class="maamoulpic" src="pictures/maamoul.png" alt="Maamoul">
+                                Maamoul
+                            </button>
+                            <button onclick=showDialog() class="menu-food-button">
+                                <img class="basbousapic" src="pictures/basbousa.png" alt="Basbousa">
+                                Basbousa
+                            </button>
+                        </div>
+            <footer class="footer">
+                    <div class="footer-location">
+                        <div class="footer-location-content">
+                            <h1 class="footer-location-title">Location</h1>
+                            <p class='address'>9999 Bvd North Coppell TX 75019</p>
+                        </div>
+                    </div>
+                    <div class="footer-hours-open">
+                        <div class="footer-hours-open-content">
+                            <h1 class="hours-open-title">Hours</h1>
+                            <p class="hours-week">Monday - Thursday 9AM - 10PM Friday-Sunday 10AM - 11PM</p>
+                        </div>
+                    </div>
+                    <div class="references">
+                        <div class="references-content">
+                            <h1 class="references-title">References</h1>
+                            <p class="references-document-link"><a class="doc-link" href="https://docs.google.com/document/d/1rIZcMrGiGh2J7VZ2rgm87UvsiiZQVZFczADrLkGK3Pw/edit?usp=sharing">2025 Shamsa Grill</a></p>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </body>
+    <script>
+        const hummus = document.getElementById("hummus")
+        const baby_ganoush = document.getElementById("baby_ganoush")
+        function showDialog(){
+            hummus.showModal()
+        }
+        function ganoush_dialog(){
+            baby_ganoush.showModal()
+        }
+        hummus.addEventListener("click", () => hummus.close());
+        baby_ganoush.addEventListener("click", () => baby_ganoush.close());
+       
+
+
+    </script>
+    </div>
+</html>
+           
