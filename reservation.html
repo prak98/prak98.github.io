@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" href="https://use.typekit.net/lff0bbg.css">
+        <title>Shamsa Grill</title>
+        <link rel="icon" href="pictures/S-removebg-preview.png">
+    </head>
+<body class="reservation-wrapper">
+    <div class="navbar-other">    
+        <a href="home.html">
+            <div class="veglogo">
+                <button type="veglogo" style="height:10px;">
+                    <img class="main-logo" src="pictures/SHAMSA_GRILL__inverted.png">
+                </button>
+            </div>
+
+        </a>
+        
+        <a href="menu.html">
+            <button class="navbar-button">Menu</button>
+        </a>
+
+        <a href="reservation.html">
+            <button class="navbar-button">Reserve</button>
+        </a>
+
+        <a href="aboutus.html">
+            <button class="navbar-button">About</button>
+        </a>
+
+    </div>
+    
+    <h1 style="color:bisque; font-family:'orpheuspro';">SAVE YOUR SEAT!</h1>
+    <h2 style="color:rgb(255, 247, 236); font-family:'orpheuspro';">Reserve your spot now—great food awaits!</h2>
+    <br>
+        
+        <table class="reserve-tab-element">
+            <div class="reserve-table"> 
+                <tr>
+                    <td>Name:</td>
+                    <td>
+                        <input class="input-box" type="text" name= "name" required /><br/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Number Of People:</td>
+                    <td>
+                        <input class="input-box" type="text" name="val" required?><br/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Time (00:00):</td>
+                    <td>
+                        <input class="input-box" type="text" name= "time" required /><br/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date Of Reservation (dd/mm):</td>
+                    <td>
+                        <input class="input-box" type="text" name="val" required?><br/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone numbe:</td>
+                    <td>
+                        <input class="input-box" type="text" name="val" required?><br/><br/>
+                    </td>
+                </tr>
+
+            </div>   
+        </table>
+
+        <button class="hero-button" id="open_dialog" >Place reservation</button>
+
+        <dialog id="reserve-dialog">
+            <p>Your reservation has been placed. Thank you!</p>
+            <button class="hero-button" id="close-dialog">Close</button>
+        </dialog>
+
+    
+    
+
+
+</body>
+<script src="script22.js"> defer</script>
+</html>
