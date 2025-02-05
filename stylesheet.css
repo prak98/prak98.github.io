@@ -18,8 +18,13 @@
     white-space:normal;
     text-align:center;
     color:#20170b;
+    opacity:0;
 }
 
+.reserve-title.show{
+    opacity:1;
+    animation: fadeInBottom 0.3s ease-in;
+}
 .reservation-button{
     background-color:#fffff7;
     color:#20170b;
@@ -82,6 +87,10 @@
     padding-bottom:14vh;
     padding-left:3vw;
     padding-right:3vw;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-image:url(pictures/Untitled\ design\ \(15\).png)
 }
 
 @media (max-width:468px){
@@ -136,6 +145,13 @@
     text-align:center;
     color:#20170b;
     white-space:normal;
+    opacity:0;
+}
+
+.reserve-subtitle.show{
+    opacity:1;
+    animation:fadeInBottom 0.3s ease-in;
+
 }
 
 .reserve-subsubtitle{    
@@ -146,8 +162,13 @@
     text-align:center;
     color:#20170b;
     white-space:normal;
+    opacity:0;
 }
+.reserve-subsubtitle.show{
+    opacity:1;
+    animation:fadeInBottom 0.3s ease-in;
 
+}
 
 
 .navbar-other{
@@ -165,7 +186,7 @@
     transition:all 0.3s;
     overflow:hidden;
     margin-bottom:0;
-    height:12vh;
+    height:13.5vh;
     animation: fadeInTop 0.8s ease-in-out;
 }
 
@@ -291,7 +312,8 @@
 
 .quantbutton{
     border-radius:10px;
-    transition:all 0.2s
+    transition:all 0.2s;
+    cursor:pointer;
 }
 
 .quantbutton:hover{
@@ -856,14 +878,31 @@ body, html {
 
 }
 
+
+.gal-title{
+    color:white;
+    background-color:#5d3000;
+    text-align:center;
+    padding-bottom:80px;
+    padding-top:80px;
+    margin-bottom:0;
+    font-family:'orpheuspro', 'sans-serif';
+    font-weight:400;
+    font-size:4vw;
+    font-weight:bold;
+}
+
 @media (max-width:468px){
     .photo-gallery-main{
         display:grid;
         grid-template-rows:1fr 1fr 1fr 1fr;
         grid-template-columns:1fr 1fr;
     }
-}
 
+    .gal-title{
+        font-size:17vw;
+    }
+}
 
 .gal-img{
     width: 100%;
@@ -880,18 +919,6 @@ body, html {
 transform:scale(1.03)
 }
 
-.gal-title{
-    color:white;
-    background-color:#5d3000;
-    text-align:center;
-    padding-bottom:80px;
-    padding-top:80px;
-    margin-bottom:0;
-    font-family:'orpheuspro', 'sans-serif';
-    font-weight:400;
-    font-size:4vw;
-    font-weight:bold;
-}
 
 .review-title{
     color:white;
@@ -903,6 +930,12 @@ transform:scale(1.03)
     font-family:'orpheuspro', 'sans-serif';
     font-weight:bold;
     font-size:4vw;
+    opacity:0;
+}
+
+.review-title.show{
+    opacity:1;
+    animation:fadeInBottom 0.3s ease-in;
 }
 
 
@@ -1117,14 +1150,14 @@ transform:scale(1.03)
 .hero-button:hover {
     background-color: rgb(236, 236, 236);
     color:rgba(51, 29, 21, 0.9);
-    transform:scale(1.05);
+    transform:scale(1.2);
     transform:translateY(-0.7vh)
 }
 
 .hero-button:active {
     background-color: rgb(143, 143, 143);
     color:rgba(43, 25, 18, 0.9);
-    transform:scale(1.03);
+    transform:scale(1.06);
     transform:translateY(0.5vh)
 }
 
@@ -1204,7 +1237,36 @@ transform:scale(1.03)
     padding-left:4%;
     gap:4%
 }
+.menu-page-title {
+    font-family: 'orpheuspro';
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    animation: fadeInBottom 0.4s ease-in-out;
+    padding-bottom:3vh;
+}
 
+.menu-page-subtitle {
+    font-family: 'orpheuspro';
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-top:1vh;
+    padding-bottom:3vh;
+    animation: fadeInBottom 0.45s ease-in-out;
+
+    
+}
+
+.menu-heading{
+    margin-top:150px;
+    padding-left:5%;
+    padding-right:5%;
+    color:#20170b;
+    font-family:'orpheuspro', 'sans-serif';
+    font-weight:900;
+    animation:fadeIn 0.3s ease-in
+}
 @media (max-width: 768px) {
     .menu-grid{
         display:grid;
@@ -1228,7 +1290,7 @@ transform:scale(1.03)
         color: white;
         font-weight: 600;
         text-align: center;
-        animation: fadeIn 0.4s ease-in-out;
+        animation: fadeInBottom 0.4s ease-in-out;
         font-size:6vw;
     }
     
@@ -1238,7 +1300,7 @@ transform:scale(1.03)
         font-weight: 500;
         text-align: center;
         margin-top:1vh;
-        animation: fadeIn 0.45s ease-in-out;
+        animation: fadeInBottom 0.45s ease-in-out;
         font-size:3vw;
     }
 }
@@ -1306,7 +1368,7 @@ transform:scale(1.03)
         color: white;
         font-weight: 600;
         text-align: center;
-        animation: fadeIn 0.4s ease-in-out;
+        animation: fadeInBottom 0.4s ease-in-out;
         font-size:6.8vw;
     }
     
@@ -1316,20 +1378,13 @@ transform:scale(1.03)
         font-weight: 500;
         text-align: center;
         margin-top:1vh;
-        animation: fadeIn 0.45s ease-in-out;
+        animation: fadeInBottom 0.45s ease-in-out;
         font-size:4.2vw;
     }
 }
 
 
-.menu-heading{
-    margin-top:150px;
-    padding-left:5%;
-    padding-right:5%;
-    color:#20170b;
-    font-family:'orpheuspro', 'sans-serif';
-    font-weight:900;
-}
+
 
 .menu-navbar-button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1441,13 +1496,13 @@ html {
 .menu-page-heading{
     background-image:url(pictures/menu-heading-bkg.jpg);
     height: 60vh; 
-    top:0;
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
     padding-bottom:4vh;
     margin-top:0;
+    animation:fadeIn 0.4s ease-in;
 }
 
 .map {
@@ -1660,7 +1715,15 @@ html {
         transform: translateY(0);
     }
 }
+@keyframes fadeIn{
+    from{
+        opacity:0;
 
+    }
+    to {
+        opacity:1;
+    }
+}
 .review-box.show {
     animation: fadeInUp75 0.7s ease-out forwards;
 }
@@ -1685,22 +1748,6 @@ html {
     text-align:center;
 }
 
-.menu-page-title {
-    font-family: 'orpheuspro';
-    color: white;
-    font-weight: 600;
-    text-align: center;
-    animation: fadeIn 0.4s ease-in-out;
-}
-
-.menu-page-subtitle {
-    font-family: 'orpheuspro';
-    color: white;
-    font-weight: 500;
-    text-align: center;
-    margin-top:1vh;
-    animation: fadeIn 0.45s ease-in-out;
-}
 
 .menu-specific-food-title{
     font-family: 'orpheuspro';
@@ -2005,6 +2052,7 @@ header .shopping span{
     padding-bottom:5vh;
 }
 
+
 @media (max-width:768px){
     .list{
         display: grid;
@@ -2036,7 +2084,6 @@ img .shopping{
 
 
 
-
 .list .item button{
     background-color: #5d3000;
     color: #fff;
@@ -2050,6 +2097,7 @@ img .shopping{
     width: 500px;
     background-color: #0b0b0b;
     height: 100vh;
+    right:0;
     transition: 0.5s;
     align-items:center;
     justify-content: center;
@@ -2138,7 +2186,6 @@ body {
     left:0;
     right:0;
     overflow-x:hidden;
-    
     background-attachment:fixed;
 }
 
@@ -2150,8 +2197,12 @@ h1 {
 .review-stars{
     font-size:3vw; 
     color:goldenrod;
+    opacity:0
 }
-
+.review-stars.show{
+    opacity:1;
+    animation:fadeInBottom 0.6s ease-in;
+}
 table {
     background-color:rgba(255, 255, 255, 0.866);
     padding: 20px;
@@ -2250,7 +2301,12 @@ dialog::backdrop {
     position: absolute;
     margin-left:2vw;
     cursor:pointer;
+    transition:all 0.3s ease-in;
+    animation:fadeInBottom 0.3s ease-in;
+}
 
+.hi:hover{
+    transform:scale(1.18)
 }
 
 #cart {
