@@ -25,7 +25,7 @@ function closeModal() {
     if (modal) modal.style.display = "none";
 }
 document.addEventListener("DOMContentLoaded", () => {
-    const elementsToObserve = document.querySelectorAll(".farm-heading, .review-box, .review-box2, .story-heading, .story-subtitle, .story-paragraph, .gal-img");
+    const elementsToObserve = document.querySelectorAll(".review-title, .review-stars, .reserve-title, .reserve-subtitle, .reserve-subsubtitle, .farm-heading, .review-box, .review-box2, .story-heading, .story-subtitle, .story-paragraph, .gal-img");
     if (elementsToObserve.length === 0) return; 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
