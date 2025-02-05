@@ -856,6 +856,13 @@ body, html {
 
 }
 
+@media (max-width:468px){
+    .photo-gallery-main{
+        display:grid;
+        grid-template-rows:1fr 1fr 1fr 1fr;
+        grid-template-columns:1fr 1fr;
+    }
+}
 
 
 .gal-img{
