@@ -156,7 +156,7 @@ function initApp(){
             <div class="">
                 <div>
                     <a class="app-button">
-                        <img class="app-img" src="menu-items/${value.image}" alt="appetizer image unavailable">
+                        <img class="app-img" src="cart-items/${value.image2}" alt="appetizer image unavailable">
                     </a>
                 </div>
                 <h1 class="app-title">${value.name}</h1>
