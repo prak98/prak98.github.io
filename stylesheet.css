@@ -2408,5 +2408,11 @@ dialog::backdrop {
     color:black;
 
 }
+.list .item button:active{
+    scale: 95%;
+    background-color: white;
+    border-color: black;
+    color: black;
+}
 
 
