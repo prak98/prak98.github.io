@@ -314,6 +314,7 @@
     border-radius:10px;
     transition:all 0.2s;
     cursor:pointer;
+    border-radius:50%;
 }
 
 .quantbutton:hover{
@@ -2158,6 +2159,16 @@ img .shopping{
 .listCard li button{
     background-color: #fff5;
     border: none;
+    border-radius:50%;
+    transition: all 0.2s
+}
+
+.listCard li button:hover{
+    transform:scale(1.07);
+}
+
+.listCard li button:active{
+    transform:scale(1.03);
 }
 .listCard .count{
     margin: 0 10px;
