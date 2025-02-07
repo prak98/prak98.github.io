@@ -2425,5 +2425,10 @@ dialog::backdrop {
     border-color: black;
     color: black;
 }
+.list .item button:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
 
 
