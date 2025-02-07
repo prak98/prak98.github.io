@@ -2094,8 +2094,8 @@ img .shopping{
     position: fixed;
     top:0;
     left: 100%;
-    width: 500px;
-    background-color: #0b0b0b;
+    width: 45vw;
+    background-color: rgba(0, 0, 0, 0.9);
     height: 100vh;
     right:0;
     transition: 0.5s;
