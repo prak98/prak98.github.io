@@ -8,15 +8,12 @@ let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
 
 
-
-
 openShopping.addEventListener('click', ()=>{
     body.classList.add('active');
 })
 closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
 })
-
 
 let products = [
     {
@@ -32,7 +29,7 @@ let products = [
         id: 2,
         name: 'BABA GANOUSH & PITA BREAD',
         image: 'babagan.png',
-        image2: 'babagan-removebg-preview.png',
+        image2: 'babagan-removebg-preview (1).png',
         price: 4.49,
         cal: 350,
         des: 'A classic pairing of rich, smoky eggplant dip with warm pita bread.'
@@ -57,12 +54,12 @@ let products = [
     },
     {
         id: 5,
-        name: 'SHAKSHUKA',
+        name: 'SHAKSHUKA 🌿',
         image: 'shakshuka.png',
         image2: 'shakshuka-removebg-preview.png',
         price: 11.99,
         cal: 575,
-        des: 'A rich tomato stew with poached eggs and spices, served with crusty bread (vegan without eggs).'
+        des: 'A rich tomato stew with spices, served with crusty bread.'
     },
     {
         id: 6,
@@ -77,7 +74,7 @@ let products = [
         id: 7,
         name: 'FALAFEL WRAP 🌿',
         image: 'falafelwrapfinal.png',
-        image2: 'falafelwrapfinal-removebg-preview.png',
+        image2: 'falafelwrapfinal-removebg-preview (1).png',
         price: 9.49,
         cal: 450,
         des: 'A warm pita filled with mouthwatering falafel, fresh vegetables, tangy pickles, and tahini.'
@@ -95,7 +92,7 @@ let products = [
         id: 9,
         name: 'BAKLAVA 🌿',
         image: 'baklavafinal.png',
-        image2: 'baklavafinal-removebg-preview.png',
+        image2: 'baklavafinal-removebg-preview (1).png',
         price: 5.49,
         cal: 550,
         des: 'Layers of flaky phyllo pastry filled with spiced nuts and sweetened with a honey glaze.'
@@ -141,7 +138,7 @@ let products = [
         name: 'SUGARCANE JUICE 🌿',
         image: '14.png',
         image2: '14-removebg-preview.png',
-        price: 0.99,
+        price: 1.99,
         cal: 75,
         des: 'A sweet, refreshing drink pressed from fresh sugarcane.'
     },
@@ -150,16 +147,10 @@ let products = [
         name: 'HOT COFFEE',
         image: '16.png',
         image2: '16-removebg-preview.png',
-        price: 1.50,
+        price: 1.49,
         cal: 165,
         des: 'Rich, aromatic brew made from freshly ground beans, perfect for any time of day.'
     },
-
-
-
-
-
-
 
 
 
@@ -211,7 +202,7 @@ function reloadCard(){
             newDiv.innerHTML = `
                 <div><img src="cart-items/${value.image2}"/></div>
                 <div>${value.name}</div>
-                <div>${value.price.toLocaleString()}</div>
+                <div>$${value.price.toLocaleString()}</div>
                 <div>
                     <button class="quantbutton" onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
@@ -220,7 +211,7 @@ function reloadCard(){
                 listCard.appendChild(newDiv);
         }
     })
-    total.innerText = totalPrice.toLocaleString();
+    total.innerText = `$` + totalPrice.toLocaleString();
     quantity.innerText = count;
 }
 function changeQuantity(key, quantity){
@@ -232,6 +223,10 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
+
+
+
+
 
 
 
