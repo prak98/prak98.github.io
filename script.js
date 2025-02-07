@@ -184,9 +184,6 @@ function addToCard(key){
         listCards[key] = JSON.parse(JSON.stringify(products[key]));
         listCards[key].quantity = 1;
         document.getElementById("added"+key).innerHTML = "Added To Cart";
-        setTimeout(() => {
-            document.getElementById("added"+key).innerHTML = "Order Now";
-        }, 2000);
     }
     reloadCard();
 }
@@ -217,6 +214,7 @@ function reloadCard(){
 function changeQuantity(key, quantity){
     if(quantity == 0){
         delete listCards[key];
+        document.getElementById("added"+key).innerHTML = "Order Now";
     }else{
         listCards[key].quantity = quantity;
         listCards[key].price = quantity * products[key].price;
