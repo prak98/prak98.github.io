@@ -183,7 +183,7 @@ function addToCard(key){
     if(listCards[key] == null){
         listCards[key] = JSON.parse(JSON.stringify(products[key]));
         listCards[key].quantity = 1;
-        document.getElementById("added"+key).innerHTML = "Added!";
+        document.getElementById("added"+key).innerHTML = "Added To Cart";
         setTimeout(() => {
             document.getElementById("added"+key).innerHTML = "Order Now";
         }, 2000);
